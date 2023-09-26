@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mikael.edvardsson2\\Documents\\programmering\\slagsmål\\slagsmål\\slagsmål.csproj": {}
+    "c:\\Users\\mikael.edvardsson2\\Documents\\programmering\\slagsmål\\slagsmål\\slagsmål.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mikael.edvardsson2\\Documents\\programmering\\slagsmål\\slagsmål\\slagsmål.csproj": {
+    "c:\\Users\\mikael.edvardsson2\\Documents\\programmering\\slagsmål\\slagsmål\\slagsmål.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mikael.edvardsson2\\Documents\\programmering\\slagsmål\\slagsmål\\slagsmål.csproj",
+        "projectUniqueName": "c:\\Users\\mikael.edvardsson2\\Documents\\programmering\\slagsmål\\slagsmål\\slagsmål.csproj",
         "projectName": "slagsmål",
-        "projectPath": "C:\\Users\\mikael.edvardsson2\\Documents\\programmering\\slagsmål\\slagsmål\\slagsmål.csproj",
+        "projectPath": "c:\\Users\\mikael.edvardsson2\\Documents\\programmering\\slagsmål\\slagsmål\\slagsmål.csproj",
         "packagesPath": "C:\\Users\\mikael.edvardsson2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mikael.edvardsson2\\Documents\\programmering\\slagsmål\\slagsmål\\obj\\",
+        "outputPath": "c:\\Users\\mikael.edvardsson2\\Documents\\programmering\\slagsmål\\slagsmål\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
