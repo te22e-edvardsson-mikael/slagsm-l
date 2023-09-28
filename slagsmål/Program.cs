@@ -1,12 +1,10 @@
 ﻿
-int hp = 500;
+int hp1 = 500;
 int hp2 = 500;
-int dmg = 0;
-int dmg2 = 0;
 
-string name = "";
+Console.WriteLine("skriv ditt namn");
 
-Console.ReadLine();
+string name = Console.ReadLine();
 
 Console.WriteLine($"welcome {name} you'll be going up against villan");
 
@@ -18,32 +16,25 @@ Console.WriteLine("Samt gör dmg mellan 0-250");
 
 Console.ReadLine();
 
-if (hp > 0){
-   
-int dmg = generator.Next(0, 250);
-
-hp-= dmg;
-}
-
-else 
+if (hp2 > 0 && hp1 > 0)
 {
-   
-Console.WriteLine("PLAYER 1 VANN")
+
+   Console.WriteLine($"Ditt {hp1}hp, klicka 'enter' för att fortsätta");
+   int dmg2 = generator.Next(0, 250);
+   hp1 -= dmg2;
+
+   Console.WriteLine($"Du tog {dmg2} skada och har nu {hp1}hp kvar");
+   Console.ReadLine();
+
+   Console.WriteLine("Slå tillbaka!");
+   int dmg1 = generator.Next(0, 250);
+   hp2 -= dmg1;
+
+   Console.WriteLine($"Du gjorde {dmg1} skada och har villan har {hp2}hp kvar");
+   Console.ReadLine();
 }
 
 
-if (hp2 > 0){
-   Console.WriteLine("du har "hp2"hp kvar");
-int dmg2 = generator.Next(0, 250);
-hp2-dmg2;
-}
-else 
-{
-   
-Console.WriteLine("PLAYER 2 VANN")
-}
-
-
-Console.WriteLine("färdig")
 
 Console.ReadLine();
+
