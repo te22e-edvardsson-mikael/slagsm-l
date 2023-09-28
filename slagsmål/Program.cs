@@ -20,6 +20,8 @@ Console.ReadLine();
 
 while (hp2 > 0 && hp1 > 0)
 {
+   
+   Console.ReadLine();
 
    Console.WriteLine($"Ditt {hp1}hp, klicka 'enter' för att fortsätta");
    int dmg2 = generator.Next(0, 250);
@@ -39,11 +41,12 @@ while (hp2 > 0 && hp1 > 0)
 
 if (hp2 < 0)
 {
-   Console.WriteLine("VILLAN VANN");
+   Console.WriteLine($"{name} VANN")
+   ;
 }
 else if (hp1 < 0)
 {
-   Console.WriteLine($"{name} VANN");
+   Console.WriteLine("VILLAN VANN");
 }
 else
 {
