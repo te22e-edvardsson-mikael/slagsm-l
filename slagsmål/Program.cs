@@ -18,7 +18,7 @@ Console.WriteLine("Samt gör dmg mellan 0-250");
 
 Console.ReadLine();
 
-if (hp2 > 0 && hp1 > 0)
+while (hp2 > 0 && hp1 > 0)
 {
 
    Console.WriteLine($"Ditt {hp1}hp, klicka 'enter' för att fortsätta");
@@ -37,16 +37,17 @@ if (hp2 > 0 && hp1 > 0)
 }
 
 
-if (hp2 < 0){
-Console.WriteLine("VILLAN VANN");
+if (hp2 < 0)
+{
+   Console.WriteLine("VILLAN VANN");
 }
-
-if (hp1 < 0){
-Console.WriteLine($"{name} VANN");
+else if (hp1 < 0)
+{
+   Console.WriteLine($"{name} VANN");
 }
-
-else{
-Console.WriteLine($"Ni Båda suger");
+else
+{
+   Console.WriteLine($"Ni Båda suger");
 }
 
 Console.ReadLine();
