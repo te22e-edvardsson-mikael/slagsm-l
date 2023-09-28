@@ -1,4 +1,6 @@
 ﻿
+using System.Threading.Tasks.Dataflow;
+
 int hp1 = 500;
 int hp2 = 500;
 
@@ -35,6 +37,17 @@ if (hp2 > 0 && hp1 > 0)
 }
 
 
+if (hp2 < 0){
+Console.WriteLine("VILLAN VANN");
+}
+
+if (hp1 < 0){
+Console.WriteLine($"{name} VANN");
+}
+
+else{
+Console.WriteLine($"Ni Båda suger");
+}
 
 Console.ReadLine();
 
