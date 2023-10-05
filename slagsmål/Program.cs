@@ -3,6 +3,7 @@ using System.Threading.Tasks.Dataflow;
 
 int hp1 = 500;
 int hp2 = 500;
+string reg = Console.ReadLine().ToLower();
 
 Console.WriteLine("skriv ditt namn");
 
@@ -20,18 +21,7 @@ Console.ReadLine();
 
 while (hp2 > 0 && hp1 > 0)
 {
-   if (hp1 < 100){
-      Console.WriteLine("Ni blev utmattade och tog en paus");
-      Console.WriteLine("Var dock försiktig eftersom motståndaren kommer också regenerera")
-
-        Console.ReadLine();
-
-         ehp1 = generator.Next(50, 100);
-         hp1 += ehp1;
-
-         ehp2 = generator.Next(50, 100);
-         hp2 += ehp2;
-      }
+   
    Console.ReadLine();
 
    Console.WriteLine($"Ditt {hp1}hp, klicka 'enter' för att fortsätta");
@@ -49,7 +39,23 @@ while (hp2 > 0 && hp1 > 0)
    Console.ReadLine();
 }
 
+if (0 < hp1 < 150 )
+{
+      
+      if (reg == ja){
+      Console.WriteLine("Ni blev utmattade och tog en paus");
+      Console.WriteLine("Var dock försiktig eftersom motståndaren kommer också regenerera")
+      Console.WriteLine("skriv 'ja om du vill regenerera'")
 
+        Console.ReadLine();
+
+         ehp1 = generator.Next(250, 100);
+         hp1 += ehp1;
+
+         ehp2 = generator.Next(50, 100);
+         hp2 += ehp2;
+      }
+}
 if (hp2 < 0)
 {
    Console.WriteLine($"{name} VANN")
