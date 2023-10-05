@@ -20,7 +20,18 @@ Console.ReadLine();
 
 while (hp2 > 0 && hp1 > 0)
 {
-   
+   if (hp1 < 100){
+      Console.WriteLine("Ni blev utmattade och tog en paus");
+      Console.WriteLine("Var dock försiktig eftersom motståndaren kommer också regenerera")
+
+        Console.ReadLine();
+
+         ehp1 = generator.Next(50, 100);
+         hp1 += ehp1;
+
+         ehp2 = generator.Next(50, 100);
+         hp2 += ehp2;
+      }
    Console.ReadLine();
 
    Console.WriteLine($"Ditt {hp1}hp, klicka 'enter' för att fortsätta");
